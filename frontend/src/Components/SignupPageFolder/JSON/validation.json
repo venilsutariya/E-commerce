@@ -1,0 +1,170 @@
+[
+    {
+        "name": "userName",
+        "conditions": [
+            {
+                "condition": "obj.userName === 'undefined' || obj.userName === ''",
+                "errmessage": "username is require"
+            }
+        ]
+    },
+    {
+        "name": "email",
+        "conditions": [
+            {
+                "condition": "obj.email === 'undefined' || obj.email === ''",
+                "errmessage": "email is require"
+            },
+            {
+                "condition": "!obj.email.includes('@outlook') && !obj.email.includes('@gmail')",
+                "errmessage": "please enter valid email"
+            }
+        ]
+    },
+    {
+        "name": "mobile",
+        "conditions": [
+            {
+                "condition": "obj.mobile === 'undefined' || obj.mobile === ''",
+                "errmessage": "mobile is require"
+            },
+            {
+                "condition": "!/[0-9]/.test(obj.mobile)",
+                "errmessage": "Mobile only contain number"
+            },
+            {
+                "condition": "obj.mobile.length !== 10",
+                "errmessage": "Mobile only contain 10 digits"
+            }
+        ]
+    },
+    {
+        "name": "gender",
+        "conditions": [
+            {
+                "condition": "obj.gender === 'undefined' || obj.gender === ''",
+                "errmessage": "gender is require"
+            }
+        ]
+    },
+    {
+        "name": "birthDate",
+        "conditions": [
+            {
+                "condition": "obj.birthDate === 'undefined' || obj.birthDate === ''",
+                "errmessage": "birthdate is require"
+            },
+            {
+                "condition": "new Date(obj.birthDate) > new Date()",
+                "errmessage": "Enter Valid birthdate"
+            }
+        ]
+    },
+    {
+        "name": "city",
+        "conditions": [
+            {
+                "condition": "obj.city === 'undefined' || obj.city === ''",
+                "errmessage": "city is require"
+            }
+        ]
+    },
+    {
+        "name": "state",
+        "conditions": [
+            {
+                "condition": "obj.state === 'undefined' || obj.state === ''",
+                "errmessage": "state is require"
+            }
+        ]
+    },
+    {
+        "name": "country",
+        "conditions": [
+            {
+                "condition": "obj.country === 'undefined' || obj.country === ''",
+                "errmessage": "country is require"
+            }
+        ]
+    },
+    {
+        "name": "postalCode",
+        "conditions": [
+            {
+                "condition": "obj.postalCode  === 'undefined' || obj.postalCode  === ''",
+                "errmessage": "postalCode  is require"
+            },
+            {
+                "condition": "!/[0-9]/.test(obj.postalCode)",
+                "errmessage": "postalCode must contain numbers"
+            }
+        ]
+    },
+    {
+        "name": "qualification",
+        "conditions": [
+            {
+                "condition": "obj.qualification === 'undefined' || obj.qualification  === ''",
+                "errmessage": "qualification  is require"
+            }
+        ]
+    },
+    {
+        "name": "address",
+        "conditions": [
+            {
+                "condition": "obj.address   === 'undefined' || obj.address   === ''",
+                "errmessage": "address   is require"
+            }
+        ]
+    },
+    {
+        "name": "password",
+        "conditions": [
+            {
+                "condition": "obj.password === undefined || obj.password  === ''",
+                "errmessage": "password is require"
+            },
+            {
+                "condition": "obj.password === obj.confirmPassword",
+                "errmessage": "",
+                "otherFeild" : "confirmPassword"
+            }
+        ]
+    },
+    {
+        "name": "confirmPassword",
+        "conditions": [
+            {
+                "condition": "obj.confirmPassword === undefined || obj.confirmPassword  === ''",
+                "errmessage": "confirmPassword is require"
+            },
+            {
+                "condition": "obj.password !== obj.confirmPassword",
+                "errmessage": "password and confirmPassword must be same"
+            }
+        ]
+    },
+    {
+        "name": "officeContact",
+        "conditions": [
+            {
+                "condition": "obj.officeContact === 'undefined' || obj.officeContact  === ''",
+                "errmessage": "officeContact is require"
+            },
+            {
+                "condition": "!/[0-9]/.test(obj.officeContact)",
+                "errmessage": "officeContact must contain numbers"
+            }
+        ]
+    },
+    {
+        "name": "userImage",
+        "conditions": [
+            {
+                "condition": "obj.userImage === 'undefined' || obj.userImage === ''",
+                "errmessage": "userImage is require"
+            }
+        ]
+    }
+]

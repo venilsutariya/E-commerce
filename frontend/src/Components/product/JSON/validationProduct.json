@@ -1,0 +1,83 @@
+[
+    {
+        "name": "productName",
+        "conditions": [
+            {
+                "condition": "obj.productName === 'undefined' || obj.productName === ''",
+                "errmessage": "productName is require"
+            }
+        ]
+    },
+    {
+        "name": "price",
+        "conditions": [
+            {
+                "condition": "obj.price === 'undefined' || obj.price === ''",
+                "errmessage": "price is require"
+            }
+        ]
+    },
+    {
+        "name": "category",
+        "conditions": [
+            {
+                "condition": "obj.category === 'undefined' || obj.category === ''",
+                "errmessage": "category is require"
+            }
+        ]
+    },
+    {
+        "name": "shopName",
+        "conditions": [
+            {
+                "condition": "obj.shopName === 'undefined' || obj.shopName === ''",
+                "errmessage": "shopName is require"
+            }
+        ]
+    },
+    {
+        "name": "mobile",
+        "conditions": [
+            {
+                "condition": "obj.mobile === 'undefined' || obj.mobile === ''",
+                "errmessage": "mobile is require"
+            }
+        ]
+    },
+    {
+        "name": "discount",
+        "conditions": [
+            {
+                "condition": "obj.discount === 'undefined' || obj.discount === ''",
+                "errmessage": "discount is require"
+            }
+        ]
+    },
+    {
+        "name": "discription",
+        "conditions": [
+            {
+                "condition": "obj.discription === 'undefined' || obj.discription === ''",
+                "errmessage": "discription is require"
+            }
+        ]
+    },
+    {
+        "name": "colors",
+        "conditions": [
+            {
+                "condition": "obj.colors === 'undefined' || obj.colors === ''",
+                "errmessage": "colors is require"
+            }
+        ]
+    },
+    {
+        "name": "productImage",
+        "conditions": [
+            {
+                "condition": "obj.productImage === ''",
+                "errmessage": "productImage is require"
+            }
+        ]
+    }
+]
